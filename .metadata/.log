@@ -1,0 +1,168 @@
+!SESSION 2024-04-02 18:51:30.948 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_IN
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-02 18:51:32.278
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.m2e.tests.common 4 0 2024-04-02 18:51:32.484
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.m2e.tests.common [911]
+  Unresolved requirement: Require-Bundle: org.eclipse.jetty.util
+    -> Bundle-SymbolicName: org.eclipse.jetty.util; bundle-version="12.0.6"
+       org.eclipse.jetty.util [894]
+         Unresolved requirement: Require-Capability: osgi.serviceloader; filter:="(osgi.serviceloader=org.eclipse.jetty.util.security.CredentialProvider)"; resolution:="optional"; cardinality:="multiple"
+         Unresolved requirement: Import-Package: org.slf4j.event; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+              slf4j.api [510]
+                Unresolved requirement: Import-Package: org.slf4j.impl; version="1.6.0"
+                  -> Export-Package: org.slf4j.impl; bundle-symbolic-name="slf4j.nop"; bundle-version="1.7.36"; version="1.7.36"
+                     slf4j.nop [871]
+                       Unresolved requirement: Import-Package: org.slf4j.spi; version="1.7.36"
+                         -> Export-Package: org.slf4j.spi; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+                       Unresolved requirement: Import-Package: org.slf4j.event; version="1.7.36"
+                         -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+                       Unresolved requirement: Import-Package: org.slf4j; version="1.7.36"
+                         -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+                       Unresolved requirement: Import-Package: org.slf4j.helpers; version="1.7.36"
+                         -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.slf4j.helpers; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.slf4j.spi; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.spi; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.slf4j; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+  Unresolved requirement: Import-Package: org.eclipse.jetty.io; version="12.0.0"
+    -> Export-Package: org.eclipse.jetty.io; bundle-symbolic-name="org.eclipse.jetty.io"; bundle-version="12.0.6"; version="12.0.6"; uses:="javax.net.ssl,org.eclipse.jetty.util,org.eclipse.jetty.util.annotation,org.eclipse.jetty.util.component,org.eclipse.jetty.util.ssl,org.eclipse.jetty.util.thread,org.slf4j"
+       org.eclipse.jetty.io [893]
+         Unresolved requirement: Import-Package: org.eclipse.jetty.jmx; version="[12.0.6,13.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"; uses:="org.eclipse.jetty.util.annotation,org.eclipse.jetty.util.component,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.thread,org.slf4j"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util.thread; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util.thread; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"; uses:="org.eclipse.jetty.util,org.eclipse.jetty.util.annotation,org.eclipse.jetty.util.component"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util.component; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util.component; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"; uses:="org.eclipse.jetty.util,org.eclipse.jetty.util.annotation"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util.annotation; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util.annotation; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"
+         Unresolved requirement: Import-Package: org.slf4j.event; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.event; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.slf4j.spi; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.spi; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util.thread.strategy; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util.thread.strategy; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"; uses:="org.eclipse.jetty.util.annotation,org.eclipse.jetty.util.component,org.eclipse.jetty.util.thread"
+         Unresolved requirement: Import-Package: org.slf4j; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util.statistic; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util.statistic; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"
+         Unresolved requirement: Import-Package: org.slf4j.helpers; version="[1.7.0,3.0.0)"
+           -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.eclipse.jetty.util.ssl; version="[12.0.6,13.0.0)"
+           -> Export-Package: org.eclipse.jetty.util.ssl; bundle-symbolic-name="org.eclipse.jetty.util"; bundle-version="12.0.6"; version="12.0.6"; uses:="javax.net.ssl,org.eclipse.jetty.util,org.eclipse.jetty.util.annotation,org.eclipse.jetty.util.component,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.security"
+  Unresolved requirement: Require-Bundle: org.eclipse.m2e.maven.runtime; bundle-version="[3.8.6,4.0.0)"
+    -> Bundle-SymbolicName: org.eclipse.m2e.maven.runtime; bundle-version="3.8.701.20230209-1606"
+       org.eclipse.m2e.maven.runtime [906]
+         Unresolved requirement: Import-Package: org.slf4j; version="[1.7.31,3.0.0)"
+           -> Export-Package: org.slf4j; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.slf4j.spi; version="[1.7.31,3.0.0)"
+           -> Export-Package: org.slf4j.spi; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+         Unresolved requirement: Import-Package: org.slf4j.helpers; version="[1.7.31,3.0.0)"
+           -> Export-Package: org.slf4j.helpers; bundle-symbolic-name="slf4j.api"; bundle-version="1.7.36"; version="1.7.36"
+  Bundle was not resolved because of a uses constraint violation.
+  org.apache.felix.resolver.reason.ReasonException: Uses constraint violation. Unable to resolve resource org.eclipse.m2e.tests.common [osgi.identity; type="osgi.bundle"; version:Version="2.0.6.20231230-2025"; osgi.identity="org.eclipse.m2e.tests.common"; singleton:="true"] because it is exposed to package 'org.eclipse.jetty.util' from resources org.eclipse.jetty.util [osgi.identity; type="osgi.bundle"; version:Version="10.0.15"; osgi.identity="org.eclipse.jetty.util"] and org.eclipse.jetty.util [osgi.identity; type="osgi.bundle"; version:Version="12.0.6"; osgi.identity="org.eclipse.jetty.util"] via two dependency chains.
+
+Chain 1:
+  org.eclipse.m2e.tests.common [osgi.identity; type="osgi.bundle"; version:Version="2.0.6.20231230-2025"; osgi.identity="org.eclipse.m2e.tests.common"; singleton:="true"]
+    require: (osgi.wiring.bundle=org.eclipse.jetty.util)
+     |
+    provide: osgi.wiring.bundle: org.eclipse.jetty.util
+  org.eclipse.jetty.util [osgi.identity; type="osgi.bundle"; version:Version="10.0.15"; osgi.identity="org.eclipse.jetty.util"]
+
+Chain 2:
+  org.eclipse.m2e.tests.common [osgi.identity; type="osgi.bundle"; version:Version="2.0.6.20231230-2025"; osgi.identity="org.eclipse.m2e.tests.common"; singleton:="true"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.io)(version>=12.0.0))
+     |
+    export: osgi.wiring.package=org.eclipse.jetty.io; uses:=org.eclipse.jetty.util
+  org.eclipse.jetty.io [osgi.identity; type="osgi.bundle"; version:Version="12.0.6"; osgi.identity="org.eclipse.jetty.io"]
+    import: (&(osgi.wiring.package=org.eclipse.jetty.util)(&(version>=12.0.6)(!(version>=13.0.0))))
+     |
+    export: osgi.wiring.package: org.eclipse.jetty.util
+  org.eclipse.jetty.util [osgi.identity; type="osgi.bundle"; version:Version="12.0.6"; osgi.identity="org.eclipse.jetty.util"]
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel$2.run(ModuleContainer.java:1852)
+	at org.eclipse.osgi.internal.framework.EquinoxContainerAdaptor$1$1.execute(EquinoxContainerAdaptor.java:136)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1845)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1786)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1750)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1672)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:234)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:345)
+
+!ENTRY org.eclipse.equinox.app 0 0 2024-04-02 18:51:32.577
+!MESSAGE Product org.eclipse.epp.package.java.product could not be found.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-04-02 18:52:17.894
+!MESSAGE Logback config file: /home/wadmin/eclipse-workspace/Scinner_Framework/.metadata/.plugins/org.eclipse.m2e.logback/logback.2.6.0.20240217-1525.xml
+
+!ENTRY org.eclipse.jface 2 0 2024-04-02 18:52:18.953
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-04-02 18:52:18.953
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2024-04-02 18:52:36.870
+!MESSAGE The profile is currently in use.
+!STACK 0
+java.lang.IllegalStateException: The profile is currently in use.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.lockProfile(SimpleProfileRegistry.java:858)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:73)
+	at org.eclipse.equinox.internal.p2.engine.Engine.perform(Engine.java:49)
+	at org.eclipse.equinox.internal.provisional.p2.director.PlanExecutionHelper.executePlan(PlanExecutionHelper.java:48)
+	at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl$3.commit(ProfileTransactionImpl.java:574)
+	at org.eclipse.oomph.p2.internal.core.ProfileTransactionImpl.commit(ProfileTransactionImpl.java:359)
+	at org.eclipse.oomph.setup.p2.impl.P2TaskImpl.perform(P2TaskImpl.java:904)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.doPerformNeededSetupTasks(SetupTaskPerformer.java:3864)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil$1.run(SetupTaskPerformer.java:5200)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer$WorkspaceUtil.performNeededSetupTasks(SetupTaskPerformer.java:5193)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performNeededSetupTasks(SetupTaskPerformer.java:3798)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.performTriggeredSetupTasks(SetupTaskPerformer.java:3773)
+	at org.eclipse.oomph.setup.internal.core.SetupTaskPerformer.perform(SetupTaskPerformer.java:3651)
+	at org.eclipse.oomph.setup.ui.wizards.ProgressPage$9.run(ProgressPage.java:592)
+	at org.eclipse.oomph.setup.ui.wizards.ProgressPage$11$1.run(ProgressPage.java:721)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2024-04-02 18:52:36.871
+!MESSAGE Setup tasks were performed during startup. See '/home/wadmin/eclipse/java-2023-06/eclipse/configuration/org.eclipse.oomph.setup/setup.log' for details
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-04-02 18:52:40.151
+!MESSAGE An internal error occurred during: "Update Job".
+!STACK 0
+java.lang.IllegalStateException: The profile is currently in use.
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1179)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfileStateProperties(SimpleProfileRegistry.java:1169)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.migration.MigrationSupport.isFirstTimeRunningThisSharedInstance(MigrationSupport.java:148)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.migration.MigrationSupport.performMigration(MigrationSupport.java:62)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler$1.run(AutomaticUpdateScheduler.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

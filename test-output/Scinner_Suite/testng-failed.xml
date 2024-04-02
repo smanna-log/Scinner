@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Scinner_Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Scinner(failed)">
+    <classes>
+      <class name="testcase.Testcase13_Add_Balance">
+        <methods>
+          <include name="setup"/>
+          <include name="screenshot"/>
+          <include name="Add_Balance"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.Testcase13_Add_Balance -->
+      <class name="testcase.Testcase11_BeFeatured">
+        <methods>
+          <include name="setup"/>
+          <include name="screenshot"/>
+          <include name="tearDown"/>
+          <include name="BeFeatured"/>
+        </methods>
+      </class> <!-- testcase.Testcase11_BeFeatured -->
+      <class name="testcase.Testcase12_Reports">
+        <methods>
+          <include name="setup"/>
+          <include name="screenshot"/>
+          <include name="Reports"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- testcase.Testcase12_Reports -->
+      <class name="testcase.Testcase14_Logout">
+        <methods>
+          <include name="setup"/>
+          <include name="screenshot"/>
+          <include name="tearDown"/>
+          <include name="Logout"/>
+        </methods>
+      </class> <!-- testcase.Testcase14_Logout -->
+    </classes>
+  </test> <!-- Scinner(failed) -->
+</suite> <!-- Failed suite [Scinner_Suite] -->
