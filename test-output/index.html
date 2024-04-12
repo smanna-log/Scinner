@@ -5,8 +5,9 @@
   <meta charset='utf-8'>
   <title>TestNG reports</title>
 
-    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
-    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="testng-reports.js"></script>
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type='text/javascript'>
@@ -20,9 +21,9 @@
      -->
   </head>
 
-  <body>
-    <div class="top-banner-root">
+  <body>    <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
       <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
@@ -102,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="allregistrationform.Testcase3_SignUpAsModel" class="method navigator-link" hash-for-method="model_Registration_Form_page1">model_Registration_Form_page1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="allregistrationform.Testcase1_NewCaller" class="method navigator-link" hash-for-method="newcaller_form">newcaller_form</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -116,12 +117,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="allregistrationform.Testcase3_SignUpAsModel" class="method navigator-link" hash-for-method="adultpopup">adultpopup</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="allregistrationform.Testcase1_NewCaller" class="method navigator-link" hash-for-method="adultpopup">adultpopup</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="allregistrationform.Testcase3_SignUpAsModel" class="method navigator-link" hash-for-method="affiliateRegistration_Button">affiliateRegistration_Button</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="allregistrationform.Testcase1_NewCaller" class="method navigator-link" hash-for-method="new_caller_Button">new_caller_Button</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -139,38 +140,65 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">allregistrationform.Testcase3_SignUpAsModel</span>
+              <span class="class-name">allregistrationform.Testcase1_NewCaller</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="model_Registration_Form_page1">
-                  </a> <!-- model_Registration_Form_page1 -->
-                  <span class="method-name">model_Registration_Form_page1</span>
-                  <div class="stack-trace">org.testng.TestNGException: 
-Method public static void allregistrationform.Testcase3_SignUpAsModel.model_Registration_Form_page1() throws java.lang.InterruptedException requires a @DataProvider named : getData
-	at org.testng.internal.Parameters.findDataProvider(Parameters.java:563)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:776)
-	at org.testng.internal.Parameters.handleParameters(Parameters.java:744)
-	at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
-	at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:783)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+                  <a name="newcaller_form">
+                  </a> <!-- newcaller_form -->
+                  <span class="method-name">newcaller_form</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//form[@method=&apos;POST&apos;]//button[@type=&apos;submit&apos;][normalize-space()=&apos;Next&apos;]&quot;}
+  (Session info: chrome=123.0.6312.105)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.5.0-27-generic&apos;, java.version: &apos;17.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2a5638e45875df5b76d2ff9d0b69777a, findElement {using=xpath, value=//form[@method=&apos;POST&apos;]//button[@type=&apos;submit&apos;][normalize-space()=&apos;Next&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.105, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:34611}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:34611/devtoo..., se:cdpVersion: 123.0.6312.105, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2a5638e45875df5b76d2ff9d0b69777a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at allregistrationform.Testcase1_NewCaller.newcaller_form(Testcase1_NewCaller.java:78)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+	at org.testng.TestNG.runSuites(TestNG.java:1134)
+	at org.testng.TestNG.run(TestNG.java:1101)
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
@@ -183,7 +211,7 @@ Method public static void allregistrationform.Testcase3_SignUpAsModel.model_Regi
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">allregistrationform.Testcase3_SignUpAsModel</span>
+              <span class="class-name">allregistrationform.Testcase1_NewCaller</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -195,9 +223,9 @@ Method public static void allregistrationform.Testcase3_SignUpAsModel.model_Regi
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="affiliateRegistration_Button">
-                  </a> <!-- affiliateRegistration_Button -->
-                  <span class="method-name">affiliateRegistration_Button</span>
+                  <a name="new_caller_Button">
+                  </a> <!-- new_caller_Button -->
+                  <span class="method-name">new_caller_Button</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -205,7 +233,7 @@ Method public static void allregistrationform.Testcase3_SignUpAsModel.model_Regi
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/tmp/testng-eclipse--1062690154/testng-customsuite.xml</span>
+            <span class="header-content">/tmp/testng-eclipse--254884060/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -214,7 +242,7 @@ Method public static void allregistrationform.Testcase3_SignUpAsModel.model_Regi
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;allregistrationform.Testcase3_SignUpAsModel&quot;/&gt;
+      &lt;class name=&quot;allregistrationform.Testcase1_NewCaller&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -256,22 +284,22 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'affiliateRegistration_Button')
-data.setCell(0, 2, 'allregistrationform.Testcase3_SignUpAsModel')
-data.setCell(0, 3, 18070);
+data.setCell(0, 1, 'newcaller_form')
+data.setCell(0, 2, 'allregistrationform.Testcase1_NewCaller')
+data.setCell(0, 3, 42985);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'adultpopup')
-data.setCell(1, 2, 'allregistrationform.Testcase3_SignUpAsModel')
-data.setCell(1, 3, 10234);
+data.setCell(1, 2, 'allregistrationform.Testcase1_NewCaller')
+data.setCell(1, 3, 12188);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'model_Registration_Form_page1')
-data.setCell(2, 2, 'allregistrationform.Testcase3_SignUpAsModel')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'new_caller_Button')
+data.setCell(2, 2, 'allregistrationform.Testcase1_NewCaller')
+data.setCell(2, 3, 6087);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 28 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -297,36 +325,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">allregistrationform.Testcase3_SignUpAsModel</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">allregistrationform.Testcase1_NewCaller</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">adultpopup</span>
-                <span class="method-start">5586 ms</span>
+                <span class="method-start">7016 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshot([TestResult name=adultpopup status=SUCCESS method=Testcase3_SignUpAsModel.adultpopup()[pri:0, instan...)</span>
-                <span class="method-start">15826 ms</span>
+                <span class="method-name">screenshot([TestResult name=adultpopup status=SUCCESS method=Testcase1_NewCaller.adultpopup()[pri:0, instance:a...)</span>
+                <span class="method-start">19213 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">affiliateRegistration_Button</span>
-                <span class="method-start">17832 ms</span>
+                <span class="method-name">new_caller_Button</span>
+                <span class="method-start">21223 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">screenshot([TestResult name=affiliateRegistration_Button status=SUCCESS method=Testcase3_SignUpAsModel.affiliat...)</span>
-                <span class="method-start">35906 ms</span>
+                <span class="method-name">screenshot([TestResult name=new_caller_Button status=SUCCESS method=Testcase1_NewCaller.new_caller_Button()[pri...)</span>
+                <span class="method-start">27314 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
+              <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">newcaller_form</span>
+                <span class="method-start">29317 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">screenshot([TestResult name=newcaller_form status=FAILURE method=Testcase1_NewCaller.newcaller_form()[pri:2, in...)</span>
+                <span class="method-start">72307 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37912 ms</span>
+                <span class="method-start">74745 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
     </div> <!-- wrapper -->
   </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
 </html>

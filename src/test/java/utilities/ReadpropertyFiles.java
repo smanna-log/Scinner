@@ -12,6 +12,6 @@ public class ReadpropertyFiles {
 		Properties p = new Properties();
 		p.load(fr);
 
-	}
+	}	
 
 }

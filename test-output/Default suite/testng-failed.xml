@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="allregistrationform.Testcase3_SignUpAsModel">
+      <class name="allregistrationform.Testcase1_NewCaller">
         <methods>
-          <include name="model_Registration_Form_page1"/>
-          <include name="setup"/>
           <include name="screenshot"/>
+          <include name="setup"/>
           <include name="tearDown"/>
+          <include name="newcaller_form"/>
         </methods>
-      </class> <!-- allregistrationform.Testcase3_SignUpAsModel -->
+      </class> <!-- allregistrationform.Testcase1_NewCaller -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
