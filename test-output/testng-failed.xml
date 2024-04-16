@@ -8,8 +8,6 @@
           <include name="setup"/>
           <include name="screenshot"/>
           <include name="tearDown"/>
-          <include name="Dashboard"/>
-          <include name="connect_Now"/>
           <include name="chat_Box"/>
         </methods>
       </class> <!-- testcase_customer.Testcase1_Login_Customer -->

@@ -9,15 +9,12 @@ import com.github.javafaker.Faker;
 import base.BaseTest;
 
 public class Testcase1_Login_Customer extends BaseTest {
-	
+
 	// Create a Faker instance
-		public static Faker faker = new Faker();
-		public static String randomMessage = faker.chuckNorris().fact();
-	
-	
-	
-	
-	
+	public static Faker faker = new Faker();
+	public static String randomMessage = faker.chuckNorris().fact();
+	// Generate a random emoji
+	// String randomEmoji = EmojiParser.parseToUnicode(":smiley:");
 
 	@Test(priority = 0)
 
@@ -144,18 +141,10 @@ public class Testcase1_Login_Customer extends BaseTest {
 				e.printStackTrace();
 			}
 		}
-		
-		
+
 		driver.findElement(By.xpath(loc3.getProperty("Enter_Your_Message_Here"))).sendKeys(randomMessage);
 		Thread.sleep(4000);
-		
-		
-		
-		
 
 	}
-	
-	
-	
 
 }
