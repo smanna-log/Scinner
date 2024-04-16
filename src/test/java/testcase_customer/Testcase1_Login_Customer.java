@@ -21,14 +21,13 @@ public class Testcase1_Login_Customer extends BaseTest {
 	public static void Login() throws InterruptedException {
 
 		driver.findElement(By.xpath(loc3.getProperty("login_button"))).click();
-		// Thread.sleep(6000);
-		// Actions actions = new Actions(driver);
+
 		driver.findElement(By.xpath(loc3.getProperty("username/email_text_field"))).sendKeys("sauravcus");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath(loc3.getProperty("email_Text_field"))).sendKeys("Test@123");
-		// Thread.sleep(2000);
+
 		driver.findElement(By.xpath(loc3.getProperty("signIn_button"))).click();
-		// Thread.sleep(6000);
+
 		driver.findElement(By.xpath(loc3.getProperty("signIn_button"))).click();
 
 	}
@@ -37,9 +36,8 @@ public class Testcase1_Login_Customer extends BaseTest {
 
 	public static void Dashboard() throws InterruptedException {
 
-		// Thread.sleep(6000);
 		driver.findElement(By.xpath(loc3.getProperty("My_Account_Button"))).click();
-		// Thread.sleep(6000);
+
 		Thread.sleep(6000);
 		driver.findElement(By.xpath(loc3.getProperty("Dashboard_Button"))).click();
 		Thread.sleep(6000);
@@ -52,6 +50,7 @@ public class Testcase1_Login_Customer extends BaseTest {
 		driver.findElement(By.xpath(loc3.getProperty("Profile_Button"))).click();
 		Thread.sleep(6000);
 		driver.findElement(By.xpath(loc3.getProperty("Info_Button"))).click();
+
 		long timeSpan = 1000;
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scroll to the bottom of the page
@@ -94,8 +93,7 @@ public class Testcase1_Login_Customer extends BaseTest {
 			}
 		}
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
-		Thread.sleep(4000); // Wait for page to load // Define time span for each scroll
-		// long timeSpan = 1000; // 1000 milliseconds = 1 second
+		Thread.sleep(4000);
 		// Scroll up with time span
 		while (true) {
 			((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -500)"); // Scroll up by 500 pixels
