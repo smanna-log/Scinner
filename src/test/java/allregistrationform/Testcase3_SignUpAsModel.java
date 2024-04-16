@@ -21,16 +21,6 @@ public class Testcase3_SignUpAsModel extends BaseTest {
 	public static String einNumber = faker.regexify("[0-9]{2}-[0-9]{7}");
 	public static String randomFullAddress = faker.address().fullAddress();
 
-	@Test(priority = 0)
-
-	public static void adultpopup() throws InterruptedException {
-		driver.findElement(By.xpath(loc2.getProperty("check_box_18+"))).click();
-		Thread.sleep(4000);
-		driver.findElement(By.xpath(loc2.getProperty("yes_I_am_over18+_button"))).click();
-		Thread.sleep(6000);
-
-	}
-
 	@Test(priority = 1)
 
 	public static void affiliateRegistration_Button() throws InterruptedException {
@@ -51,31 +41,21 @@ public class Testcase3_SignUpAsModel extends BaseTest {
 				e.printStackTrace();
 			}
 		}
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(loc2.getProperty("Sign_Up_As_Model"))).click();
-		Thread.sleep(6000);
 	}
 
 	@Test(priority = 2)
 
 	public static void model_Registration_Form_page1() throws InterruptedException {
 
-		driver.findElement(By.xpath(loc2.getProperty("Email_ID*"))).sendKeys(randomusername +"@yopmail.com");
-		Thread.sleep(4000);
+		driver.findElement(By.xpath(loc2.getProperty("Email_ID*"))).sendKeys(randomusername + "@yopmail.com");
 		driver.findElement(By.xpath(loc2.getProperty("Username*"))).sendKeys(randomusername);
-		Thread.sleep(4000);
 		driver.findElement(By.xpath(loc2.getProperty("EIN/Social_Security_Number*"))).sendKeys(einNumber);
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(loc2.getProperty("Phone_Number*"))).sendKeys(randomPhoneNumber);
-		Thread.sleep(4000);
 		driver.findElement(By.xpath(loc2.getProperty("Home_Address*"))).sendKeys(randomFullAddress);
-		Thread.sleep(2000);
 		driver.findElement(By.xpath(loc2.getProperty("Password*"))).sendKeys("Test@123");
-		Thread.sleep(4000);
 		driver.findElement(By.xpath(loc2.getProperty("Confirm_Password*"))).sendKeys("Test@123");
-		Thread.sleep(4000);
 		driver.findElement(By.xpath(loc2.getProperty("Next_Button")));
-		Thread.sleep(4000);
 
 	}
 
