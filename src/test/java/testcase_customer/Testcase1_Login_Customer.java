@@ -50,7 +50,8 @@ public class Testcase1_Login_Customer extends BaseTest {
 		driver.findElement(By.xpath(loc3.getProperty("Profile_Button"))).click();
 		Thread.sleep(6000);
 		driver.findElement(By.xpath(loc3.getProperty("Info_Button"))).click();
-
+		
+		//Full scroll
 		long timeSpan = 1000;
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		// Scroll to the bottom of the page
@@ -67,6 +68,7 @@ public class Testcase1_Login_Customer extends BaseTest {
 				e.printStackTrace();
 			}
 		}
+
 	}
 
 	@Test(priority = 2)
@@ -94,6 +96,7 @@ public class Testcase1_Login_Customer extends BaseTest {
 		}
 		((JavascriptExecutor) driver).executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Thread.sleep(4000);
+
 		// Scroll up with time span
 		while (true) {
 			((JavascriptExecutor) driver).executeScript("window.scrollBy(0, -500)"); // Scroll up by 500 pixels

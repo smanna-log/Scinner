@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcase_customer.Testcase1_Login_Customer">
+      <class name="testcase_customer.Customerside_Link">
         <methods>
           <include name="setup"/>
           <include name="screenshot"/>
           <include name="tearDown"/>
-          <include name="chat_Box"/>
+          <include name="category_section"/>
         </methods>
-      </class> <!-- testcase_customer.Testcase1_Login_Customer -->
+      </class> <!-- testcase_customer.Customerside_Link -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
