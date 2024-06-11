@@ -24,7 +24,7 @@ public class Testcase1_Adultpopup extends BaseTest {
 		if (checkBox.isDisplayed() && checkBox.isEnabled()) 
 		{
 			checkBox.click();
-			Thread.sleep(4000);
+			//Thread.sleep(4000);
 			driver.findElement(By.xpath(loc.getProperty("yes_I_am_over18+_button"))).click();
 //			Thread.sleep(6000);
 //			System.out.println("yes_I_am_over18+_button");

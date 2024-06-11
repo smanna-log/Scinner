@@ -16,7 +16,7 @@ public class Customerside_Link extends BaseTest {
 	// Method to verify if a link is working
 	public static void verifyLink(String linkPath) {
 
-		try {
+		try {	
 			// Create a URL object
 			URL url = new URL(linkPath);
 			// Open a connection to the URL
@@ -119,7 +119,7 @@ public class Customerside_Link extends BaseTest {
 		Thread.sleep(6000);
 		WebElement category_Dropdown = driver.findElement(By.xpath(loc3.getProperty("Category_Dropdown")));
 		category_Dropdown.click();
-		Thread.sleep(6000);
+		Thread.sleep(6000);	
 		// Extract options from the dropdown menu
 		List<WebElement> dropdownOptions = category_Dropdown.findElements(By.xpath("//li[@role= \"option\"]"));
 		System.out.println("Number of links in the Lust_List section: " + dropdownOptions.size());

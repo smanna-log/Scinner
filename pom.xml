@@ -85,11 +85,5 @@
 			<version>2.20.0</version>
 		</dependency>
 
-
-		<dependency>
-			<groupId>Raridx_Maven_TestNG</groupId>
-			<artifactId>Raridx_Maven_TestNG</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 	</dependencies>
 </project>

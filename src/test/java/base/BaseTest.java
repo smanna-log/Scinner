@@ -60,7 +60,7 @@ public class BaseTest {
 //			driver.findElement(By.xpath(loc2.getProperty("yes_I_am_over18+_button"))).click();
 //			Thread.sleep(6000);
 		} else if (prop.getProperty("browser").equalsIgnoreCase("chrome")) {
-			WebDriverManager.firefoxdriver().setup();
+			WebDriverManager.firefoxdriver().setup();	
 			driver = new FirefoxDriver();
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 			driver.manage().window().maximize();

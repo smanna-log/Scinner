@@ -26,6 +26,7 @@ public class Testcase10_Profile extends BaseTest {
 		Thread.sleep(4000);
 		driver.findElement(By.xpath(loc.getProperty("Share_Profile"))).click();
 		Thread.sleep(4000);
+		
 
 	}
 

@@ -88,10 +88,11 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_CAxi6_D0Ee6CZfB69Vq5xg" containerData="7400">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_CAxi6_D0Ee6CZfB69Vq5xg" containerData="7400" selectedElement="_CAxi7fD0Ee6CZfB69Vq5xg">
               <children xsi:type="advanced:Placeholder" xmi:id="_CAxi7PD0Ee6CZfB69Vq5xg" elementId="org.eclipse.ui.editorss" containerData="6600" ref="_CAnK0PD0Ee6CZfB69Vq5xg"/>
-              <children xsi:type="basic:PartStack" xmi:id="_CAxi7fD0Ee6CZfB69Vq5xg" elementId="bottomRight" containerData="3400" selectedElement="_CAxi7vD0Ee6CZfB69Vq5xg">
+              <children xsi:type="basic:PartStack" xmi:id="_CAxi7fD0Ee6CZfB69Vq5xg" elementId="bottomRight" containerData="3400" selectedElement="_TlEKkCF8Ee-4iZezuAZ7tA">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
+                <tags>Mobile Automation</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_CAxi7vD0Ee6CZfB69Vq5xg" elementId="org.eclipse.ui.views.TaskList" ref="_CAtRcvD0Ee6CZfB69Vq5xg" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -99,6 +100,10 @@
                 <children xsi:type="advanced:Placeholder" xmi:id="_CAxi7_D0Ee6CZfB69Vq5xg" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView" toBeRendered="false" ref="_CAw70PD0Ee6CZfB69Vq5xg" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:Terminal</tags>
+                </children>
+                <children xsi:type="advanced:Placeholder" xmi:id="_TlEKkCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.RepositoryView" ref="_TlDjgCF8Ee-4iZezuAZ7tA" closeable="true">
+                  <tags>View</tags>
+                  <tags>categoryTag:Mobile Automation</tags>
                 </children>
               </children>
             </children>
@@ -218,6 +223,18 @@
       <tags>View</tags>
       <tags>categoryTag:Ant</tags>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_TlDjgCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.RepositoryView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Repository" iconURI="platform:/plugin/com.experitest.stae.ui/icons/repository.png" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.views.RepositoryView"/>
+      <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view/>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Mobile Automation</tags>
+      <menus xmi:id="_TlNUgCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.RepositoryView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_TlNUgSF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.RepositoryView" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_B1hVIvD0Ee6CZfB69Vq5xg" elementId="org.eclipse.ui.main.toolbar" contributorURI="platform:/plugin/org.eclipse.ui.workbench">
       <children xsi:type="menu:ToolBar" xmi:id="_B_GH4PD0Ee6CZfB69Vq5xg" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -225,7 +242,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_B_Gu8PD0Ee6CZfB69Vq5xg" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mMWKUPYwEe6KxfJ7rhurOg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_B17lD_D0Ee6CZfB69Vq5xg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5p_L0CF_Ee-x7aIRB5j3Ag" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_B17lD_D0Ee6CZfB69Vq5xg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_B_Gu8fD0Ee6CZfB69Vq5xg" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -233,8 +250,8 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_B_Gu8_D0Ee6CZfB69Vq5xg" elementId="org.eclipse.ui.workbench.edit">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mMXYcPYwEe6KxfJ7rhurOg" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_B15Io_D0Ee6CZfB69Vq5xg"/>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mMXYcfYwEe6KxfJ7rhurOg" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_B15v4_D0Ee6CZfB69Vq5xg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5p_y4CF_Ee-x7aIRB5j3Ag" elementId="undo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/undo_edit.png" tooltip="Undo" enabled="false" command="_B15Io_D0Ee6CZfB69Vq5xg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5p_y4SF_Ee-x7aIRB5j3Ag" elementId="redo" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/redo_edit.png" tooltip="Redo" enabled="false" command="_B15v4_D0Ee6CZfB69Vq5xg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_B_Gu9PD0Ee6CZfB69Vq5xg" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -252,7 +269,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_B_HWAvD0Ee6CZfB69Vq5xg" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_mMX_g_YwEe6KxfJ7rhurOg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_B16-GfD0Ee6CZfB69Vq5xg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5qBBACF_Ee-x7aIRB5j3Ag" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" enabled="false" type="Check" command="_B16-GfD0Ee6CZfB69Vq5xg"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_B_HWA_D0Ee6CZfB69Vq5xg" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1267,6 +1284,54 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.pde.ui"/>
     <tags>View</tags>
     <tags>categoryTag:Plug-in Development</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWuMkCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.cloud.views.CloudDevicesView" label="Cloud Devices" iconURI="platform:/plugin/com.experitest.stae.ui/icons/cloud.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.cloud.views.CloudDevicesView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWuzoCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.RepositoryView" label="Repository" iconURI="platform:/plugin/com.experitest.stae.ui/icons/repository.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.views.RepositoryView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWvasCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.cloud.views.ApplicationsView" label="Applications" iconURI="platform:/plugin/com.experitest.stae.ui/icons/apps.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.cloud.views.ApplicationsView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWvasSF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.DumpPropertiesView" label="Dump Properties" iconURI="platform:/plugin/com.experitest.stae.ui/icons/cloud.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.views.DumpPropertiesView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWwBwCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.CodeExportView" label="Code Export" iconURI="platform:/plugin/com.experitest.stae.ui/icons/recorder.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.views.CodeExportView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWwo0CF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.views.CapabilityManagerView" label="Capability Manager" iconURI="platform:/plugin/com.experitest.stae.ui/icons/manager.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.views.CapabilityManagerView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWwo0SF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.cloud.views.DevicesView" label="Devices" iconURI="platform:/plugin/com.experitest.stae.ui/icons/open_device.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.cloud.views.DevicesView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
+  </descriptors>
+  <descriptors xmi:id="_TWxP4CF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.cloud.views.StoryView" label="Story" iconURI="platform:/plugin/com.experitest.stae.ui/icons/object_spy.png" tooltip="" category="Mobile Automation" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="com.experitest.stae.cloud.views.StoryView"/>
+    <persistedState key="originalCompatibilityViewBundle" value="com.experitest.stae.ui"/>
+    <tags>View</tags>
+    <tags>categoryTag:Mobile Automation</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -2311,6 +2376,12 @@
   <commands xmi:id="_4ehD5PF_Ee6FI57dJ48a6w" elementId="org.eclipse.epp.package.common.contribute" commandName="Contribute" description="Contribute to the development and success of the Eclipse IDE!" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
   <commands xmi:id="_4lKecPF_Ee6FI57dJ48a6w" elementId="AUTOGEN:::org.eclipse.ui.cheatsheets.actionSet/org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction" commandName="Cheat Sheets..." category="_B12sWvD0Ee6CZfB69Vq5xg"/>
   <commands xmi:id="_4lM6sPF_Ee6FI57dJ48a6w" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.search.open" commandName="Search Repository..." category="_B12sWvD0Ee6CZfB69Vq5xg"/>
+  <commands xmi:id="_TQS0cCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.ui.support.data" commandName="Collect Support Data" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
+  <commands xmi:id="_TQS0cSF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.ui.getting.started" commandName="Getting Started" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
+  <commands xmi:id="_TQS0ciF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.ui.cloud.config" commandName="Cloud Configuration" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
+  <commands xmi:id="_TQTbgCF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.run.command" commandName="Run selected command" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
+  <commands xmi:id="_TQTbgSF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.ui.open.cloud.web" commandName="Open Cloud Web Portal" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
+  <commands xmi:id="_TQTbgiF8Ee-4iZezuAZ7tA" elementId="com.experitest.stae.run.line" commandName="Run selected line" category="_B12sWvD0Ee6CZfB69Vq5xg"/>
   <addons xmi:id="_B1hVLvD0Ee6CZfB69Vq5xg" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_B1hVL_D0Ee6CZfB69Vq5xg" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_B1hVMPD0Ee6CZfB69Vq5xg" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.ui.workbench" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
